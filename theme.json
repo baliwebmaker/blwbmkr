@@ -1,0 +1,709 @@
+{
+	"customTemplates": [
+		{
+			"name": "no-title-template",
+			"postTypes": [
+				"post",
+				"page"
+			],
+			"title": "No title"
+		},
+		{
+			"name": "blank-post-template",
+			"postTypes": [
+				"post",
+				"page"
+			],
+			"title": "Blank"
+		},
+		{
+			"name": "sidebar-post-template",
+			"postTypes": [
+				"post",
+				"page"
+			],
+			"title": "Sidebar"
+		},
+		{
+			"name": "featured-image-header-split-post-template",
+			"postTypes": [
+				"post"
+			],
+			"title": "Split design with featured image and post title"
+		},
+		{
+			"name": "full-width-featured-image-header-post-template",
+			"postTypes": [
+				"post"
+			],
+			"title": "Full width featured image above post title"
+		},
+		{
+			"name": "featured-image-header-post-template",
+			"postTypes": [
+				"post"
+			],
+			"title": "Featured image centered above post title"
+		},
+		{
+			"name": "full-screen-featured-image-cover-post-template",
+			"postTypes": [
+				"post"
+			],
+			"title": "Full screen featured image cover block with post title"
+		},
+		{
+			"name": "archive-product",
+			"title": "WooCommerce product archive (Requires WooCommerce Blocks plugin)"
+		},
+		{
+			"name": "single-product",
+			"postTypes": [
+				"product",
+				"page"
+			],
+			"title": "WooCommerce single product (Requires WooCommerce)"
+		},
+		{
+			"name": "page-cart",
+			"postTypes": [
+				"page"
+			],
+			"title": "WooCommerce cart (Requires WooCommerce Blocks plugin)"
+		},
+		{
+			"name": "page-checkout",
+			"postTypes": [
+				"page"
+			],
+			"title": "WooCommerce checkout (Requires WooCommerce Blocks plugin)"
+		},
+		{
+			"name": "taxonomy-product_cat",
+			"title": "WooCommerce product category archive (Requires WooCommerce)"
+		},
+		{
+			"name": "taxonomy-product_tag",
+			"title": "WooCommerce product tag archive (Requires WooCommerce)"
+		},
+		{
+			"name": "product-search-results",
+			"title": "WooCommerce product search result (Requires WooCommerce)"
+		}
+	],
+	"patterns": [
+		"paragraph-heading",
+		"heading-with-two-font-sizes-and-separators"
+	],
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"duotone": [
+				{
+					"colors": [
+						"#1d2327",
+						"#d3bc8e"
+					],
+					"name": "Very Dark Gray and gold",
+					"slug": "background-primary"
+				},
+				{
+					"colors": [
+						"#3c434a",
+						"#d3bc8e"
+					],
+					"name": "Dark Gray and gold",
+					"slug": "seconary-primary"
+				},
+				{
+					"colors": [
+						"#1d2327",
+						"#f0f0f1"
+					],
+					"name": "Very Dark Gray and white",
+					"slug": "background-foreground"
+				},
+				{
+					"colors": [
+						"#9b8b6d",
+						"#f0f0f1"
+					],
+					"name": "Gold and white",
+					"slug": "primary-foreground"
+				}
+			],
+			"gradients": [
+				{
+					"gradient": "linear-gradient(to bottom right,transparent 49.9%,#d3bc8e 50%)",
+					"name": "Diagonal transparent to primary",
+					"slug": "d-transparent-primary"
+				},
+				{
+					"gradient": "linear-gradient(to bottom right, #d3bc8e 49.9%, transparent 50%)",
+					"name": "Diagonal primary to transparent",
+					"slug": "d-primary-transparent"
+				},
+				{
+					"gradient": "linear-gradient(to bottom right,#fff 49.9%,#d3bc8e 50%)",
+					"name": "Diagonal white to primary",
+					"slug": "d-white-primary"
+				},
+				{
+					"gradient": "linear-gradient(to bottom right,#d3bc8e 49.9%,#fff 50%)",
+					"name": "Diagonal primary to white",
+					"slug": "d-primary-white"
+				},
+				{
+					"gradient": "linear-gradient(#d3bc8e 49.9%,transparent 50%)",
+					"name": "Horizontal primary to transparent",
+					"slug": "h-primary-transparent"
+				},
+				{
+					"gradient": "linear-gradient(transparent 49.9%,#d3bc8e 50%)",
+					"name": "Horizontal transparent to primary",
+					"slug": "h-transparent-primary"
+				},
+				{
+					"gradient": "linear-gradient(#d3bc8e 49.9%,#fff 50%)",
+					"name": "Horizontal primary to white",
+					"slug": "h-primary-white"
+				},
+				{
+					"gradient": "linear-gradient(#fff 49.9%,#d3bc8e 50%)",
+					"name": "Horizontal white to primary",
+					"slug": "h-white-primary"
+				},
+				{
+					"gradient": "linear-gradient(to right, #d3bc8e 49.9%,transparent 50%)",
+					"name": "Vertical primary to transparent",
+					"slug": "v-primary-transparent"
+				},
+				{
+					"gradient": "linear-gradient(to right, transparent 49.9%,#d3bc8e 50%)",
+					"name": "Vertical transparent to primary",
+					"slug": "v-transparent-primary"
+				},
+				{
+					"gradient": "linear-gradient(to right, #d3bc8e 49.9%,#fff 50%)",
+					"name": "Vertical primary to white",
+					"slug": "v-primary-white"
+				},
+				{
+					"gradient": "linear-gradient(to right, #fff 49.9%,#d3bc8e 50%)",
+					"name": "Vertical white to primary",
+					"slug": "v-white-primary"
+				}
+			],
+			"palette": [
+				{
+					"color": "#1d2327",
+					"name": "Background",
+					"slug": "background"
+				},
+				{
+					"color": "#FFFFFF",
+					"name": "Foreground",
+					"slug": "foreground"
+				},
+				{
+					"color": "#d3bc8e",
+					"name": "Gold",
+					"slug": "primary"
+				},
+				{
+					"color": "#3c434a",
+					"name": "Dark Gray",
+					"slug": "secondary"
+				},
+				{
+					"color": "transparent",
+					"name": "Transparent",
+					"slug": "transparent"
+				}
+			]
+		},
+		"custom": {
+			"button-border-color": "rgba(0, 0, 0, 0.05)",
+			"button-border-radius": "4px",
+			"button-highlight": "0 0 0 #fff",
+			"button-padding": ".3rem 1rem",
+			"button-shadow": "var(--wp--preset--shadow--natural)",
+			"h-spacing": "var(--wp--preset--spacing--60)",
+			"small-button-shadow": "0 1px 1px 0 rgba(0, 0, 0, 0.2)",
+			"text-shadow": "var(--wp--preset--shadow--natural)",
+			"v-spacing": "var(--wp--preset--spacing--50)"
+		},
+		"layout": {
+			"contentSize": "960px",
+			"wideSize": "1100px"
+		},
+		"spacing": {
+			"units": [
+				"px",
+				"em",
+				"rem",
+				"vh",
+				"vw",
+				"%"
+			]
+		},
+		"typography": {
+			"dropCap": false,
+			"fontFamilies": [
+				{
+					"fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell,\"Helvetica Neue\",sans-serif",
+					"name": "System (Roboto, Segoe UI, Ubuntu)",
+					"slug": "system"
+				},
+				{
+					"fontFamily": "\"Times New Roman\",\"New York\",Times,\"Noto Serif\",serif",
+					"name": "Serif (Times New Roman, Noto Serif)",
+					"slug": "serif"
+				},
+				{
+					"fontFamily": "Consolas,Menlo,Monaco,\"SF Mono\",\"DejaVu Sans Mono\",\"Roboto Mono\",\"Courier New\",Courier,monospace",
+					"name": "Monospace (Consolas, SF Mono, Roboto Mono)",
+					"slug": "monospace"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Oswald",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/oswald-v47-latin-ext-regular.woff2"
+							]
+						}
+					],
+					"fontFamily": "Oswald, sans-serif",
+					"name": "Oswald",
+					"slug": "oswald"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "\"Playfair Display\"",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/playfair-display-v28-latin-ext-regular.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Playfair Display\"",
+							"fontStyle": "italic",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/playfair-display-v28-latin-ext-italic.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Playfair Display\", serif",
+					"name": "Playfair Display",
+					"slug": "playfair-display"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Montserrat",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/montserrat-v23-latin-ext_latin-regular.woff2"
+							]
+						},
+						{
+							"fontFamily": "Montserrat",
+							"fontStyle": "italic",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/montserrat-v23-latin-ext_latin-italic.woff2"
+							]
+						}
+					],
+					"fontFamily": "Montserrat, serif",
+					"name": "Montserrat",
+					"slug": "montserrat"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Lora",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/lora-v23-latin-ext_latin-regular.woff2"
+							]
+						},
+						{
+							"fontFamily": "Lora",
+							"fontStyle": "italic",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/lora-v23-latin-ext_latin-italic.woff2"
+							]
+						}
+					],
+					"fontFamily": "Lora, serif",
+					"name": "Lora",
+					"slug": "lora"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Caveat",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/caveat-v14-latin-ext-regular.woff2"
+							]
+						},
+						{
+							"fontFamily": "Caveat",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/caveat-v14-latin-ext-700.woff2"
+							]
+						}
+					],
+					"fontFamily": "Caveat, serif",
+					"name": "Caveat",
+					"slug": "caveat"
+				}
+			],
+			"fontSizes": [
+				{
+					"name": "Extra small",
+					"size": "0.8rem",
+					"slug": "extra-small"
+				},
+				{
+					"name": "Small",
+					"size": "1rem",
+					"slug": "small"
+				},
+				{
+					"name": "Medium",
+					"size": "1.25rem",
+					"slug": "medium"
+				},
+				{
+					"name": "Large",
+					"size": "1.5rem",
+					"slug": "large"
+				},
+				{
+					"name": "XL",
+					"size": "2rem",
+					"slug": "x-large"
+				},
+				{
+					"name": "XXL",
+					"size": "clamp(2.5rem, calc(1rem + 2vw), 2.75rem)",
+					"slug": "xx-large"
+				},
+				{
+					"name": "XXXL",
+					"size": "clamp(2.75rem, calc(1rem + 3vw), 3.75rem)",
+					"slug": "xxx-large"
+				},
+				{
+					"name": "XXXXL",
+					"size": "clamp(2.75rem, calc(1rem + 4vw), 4.25rem)",
+					"slug": "xxxx-large"
+				},
+				{
+					"name": "XXXXXL",
+					"size": "clamp(2.75rem, calc(1rem + 6vw), 6rem)",
+					"slug": "xxxxx-large"
+				}
+			]
+		},
+		"useRootPaddingAwareAlignments": true
+	},
+	"styles": {
+		"blocks": {
+			"core/code": {
+				"color": {
+					"text": "var(--wp--preset--color--foreground)"
+				}
+			},
+			"core/latest-comments": {
+				"spacing": {
+					"padding": {
+						"left": "0px"
+					}
+				}
+			},
+			"core/list-item": {
+				"spacing": {
+					"margin": {
+						"bottom": "var(--wp--preset--spacing--20)"
+					}
+				}
+			},
+			"core/navigation": {
+				"typography": {
+					"textDecoration": "none"
+				}
+			},
+			"core/post-author": {
+				"color": {
+					"text": "var(--wp--preset--color--primary)"
+				},
+				"elements": {
+					"link": {
+						"color": {
+							"text": "var(--wp--preset--color--primary)"
+						}
+					}
+				},
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--extra-small)"
+				}
+			},
+			"core/post-date": {
+				"color": {
+					"text": "var(--wp--preset--color--primary)"
+				},
+				"elements": {
+					"link": {
+						"color": {
+							"text": "var(--wp--preset--color--primary)"
+						}
+					}
+				},
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--extra-small)"
+				}
+			},
+			"core/post-navigation-link": {
+				"spacing": {
+					"margin": {
+						"bottom": "var(--wp--preset--spacing--50)",
+						"top": "var(--wp--preset--spacing--70)"
+					}
+				}
+			},
+			"core/post-terms": {
+				"color": {
+					"text": "var(--wp--preset--color--primary)"
+				},
+				"elements": {
+					"link": {
+						"color": {
+							"text": "var(--wp--preset--color--primary)"
+						}
+					}
+				},
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--extra-small)"
+				}
+			},
+			"core/query-pagination": {
+				"spacing": {
+					"margin": {
+						"top": "var(--wp--preset--spacing--70)"
+					}
+				}
+			}
+		},
+		"color": {
+			"background": "var(--wp--preset--color--foreground)",
+			"text": "var(--wp--preset--color--secondary)"
+		},
+		"css": "",
+		"elements": {
+			"button": {
+				":active": {
+					"border": {
+						"color": "rgba(0, 0, 0, 0.05)"
+					},
+					"color": {
+						"text": "var(--wp--preset--color--foreground)"
+					},
+					"shadow": "var(--wp--custom--small-button-shadow)",
+					"spacing": {
+						"margin": {
+							"bottom": "-1px",
+							"top": "1px"
+						}
+					}
+				},
+				":focus": {
+					"border": {
+						"color": "rgba(0, 0, 0, 0.05)"
+					},
+					"color": {
+						"text": "var(--wp--preset--color--foreground)"
+					},
+					"shadow": "var(--wp--custom--small-button-shadow)"
+				},
+				":hover": {
+					"border": {
+						"color": "rgba(0, 0, 0, 0.05)"
+					},
+					"color": {
+						"text": "var(--wp--preset--color--foreground)"
+					},
+					"shadow": "var(--wp--custom--small-button-shadow)"
+				},
+				"border": {
+					"color": "rgba(0, 0, 0, 0.05);",
+					"radius": "4px",
+					"style": "solid",
+					"width": "2px"
+				},
+				"color": {
+					"background": "var(--wp--preset--color--foreground)",
+					"text": "var(--wp--preset--color--background)"
+				},
+				"shadow": "var(--wp--preset--shadow--natural)",
+				"spacing": {
+					"padding": {
+						"bottom": "0.3rem",
+						"left": "1rem",
+						"right": "1rem",
+						"top": "0.3rem"
+					}
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--system)",
+					"fontSize": "var(--wp--preset--font-size--small)",
+					"lineHeight": "1.7"
+				}
+			},
+			"caption": {
+				"color": {
+					"text": "var(--wp--preset--color--secondary)"
+				}
+			},
+			"heading": {
+				"color": {
+					"text": "var(--wp--preset--color--secondary)"
+				}
+			},
+			"link": {
+				"color": {
+					"text": "#2676a4"
+				},
+				"typography": {
+					"textDecoration": "none"
+				}
+			}
+		},
+		"spacing": {
+			"blockGap": "1.25rem",
+			"padding": {
+				"left": "var(--wp--preset--spacing--60)",
+				"right": "var(--wp--preset--spacing--60)"
+			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--system)",
+			"fontSize": "var(--wp--preset--font-size--medium)",
+			"lineHeight": "1.75"
+		}
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header",
+			"title": "Blwbmkr Sticky Header"
+		},
+		{
+			"area": "header",
+			"name": "header-minicart",
+			"title": "Sticky Header with Mini Cart (Requires WooCommerce Blocks)"
+		},
+		{
+			"area": "header",
+			"name": "header-with-sticky-navigation",
+			"title": "Transparent header with sticky menu button"
+		},
+		{
+			"area": "header",
+			"name": "header-right-aligned-menu",
+			"title": "Header with right-aligned menu"
+		},
+		{
+			"area": "header",
+			"name": "header-large-logo",
+			"title": "Header with large logo"
+		},
+		{
+			"area": "header",
+			"name": "header-centered-menu",
+			"title": "Header with centered menu"
+		},
+		{
+			"area": "header",
+			"name": "header-full-width",
+			"title": "Full width header"
+		},
+		{
+			"area": "header",
+			"name": "header-wide",
+			"title": "Wide header"
+		},
+		{
+			"area": "header",
+			"name": "header-narrow",
+			"title": "Narrow header"
+		},
+		{
+			"area": "header",
+			"name": "header-featured-image-cover",
+			"title": "Header with featured image as background"
+		},
+		{
+			"area": "footer",
+			"name": "footer",
+			"title": "Footer"
+		},
+		{
+			"area": "footer",
+			"name": "footer-basic",
+			"title": "Footer without search and scroll to top links"
+		},
+		{
+			"area": "footer",
+			"name": "footer-wide",
+			"title": "Wide footer"
+		},
+		{
+			"area": "footer",
+			"name": "footer-full-width",
+			"title": "Full width footer"
+		},
+		{
+			"area": "footer",
+			"name": "footer-extra-tall",
+			"title": "Extra tall footer with 4 columns"
+		},
+		{
+			"area": "footer",
+			"name": "footer-extra-tall-sticky",
+			"title": "Extra tall footer with 4 columns Sticky Footer"
+		},
+		{
+			"area": "header",
+			"name": "mini-cart",
+			"title": "Mini Cart (requires WooCommerce Blocks)"
+		},
+		{
+			"area": "header",
+			"name": "top-bar",
+			"title": "Top bar. Announcement bar for the header area"
+		},
+		{
+			"area": "footer",
+			"name": "promise-bar",
+			"title": "Ecommerce Promise bar. Announcement bar for the shop area"
+		}
+	],
+	"version": 2,
+	"$schema": "https://schemas.wp.org/wp/6.3/theme.json"
+}

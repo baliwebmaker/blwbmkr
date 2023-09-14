@@ -1,0 +1,108 @@
+/*
+Theme Name: blwbmkr
+Theme URI: https://www.baliwebmaker.com
+Author: Bali Web Maker
+Author URI: https://www.baliwebmaker.com
+Description: bali web maker tour
+Requires at least: 6.0
+Tested up to: 6.3
+Requires PHP: 5.7
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: blwbmkr
+Tags: grid-layout, accessibility-ready, block-patterns, block-styles, editor-style, full-site-editing
+*/
+
+/* Styles intended only for the front.*/
+html {
+	scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+	.is-style-blwbmkr-sticky-header {
+		position: sticky;
+		top: 0;
+		z-index: 999;
+	}
+/*
+* Sticky button is experimental,
+* only use it on the front for screens above 782px width.
+*/
+@media screen and (min-width: 782px) {
+
+	.is-style-blwbmkr-sticky {
+		position: fixed;
+		top: 2em;
+		right: 2em;
+	}
+
+/* Move the fixed position down to adjust for the WordPress admin bar */
+	.admin-bar .is-style-blwbmkr-sticky {
+		top: calc(2em + 32px);
+	}
+
+
+
+/* Move the sticky position down to adjust for the WordPress admin bar */
+	.admin-bar .is-style-blwbmkr-sticky-header {
+		top: 32px;
+	}
+
+}
+
+/* Hide the header block patterns on the paginated results. */
+.home.paged .blwbmkr-pattern-header-image {
+	display: none;
+}
+
+/* Hide selected sticky posts and paginated results. */
+body.query-block-paged .wp-block-query.blwbmkr-hide-sticky {
+	display: none;
+}
+
+.blwbmkr-blog-layout .wp-block-post-template li .wp-block-group:not(.blwbmkr-post-meta) {
+	height: 100%;
+}
+
+
+.is-negative-top-margin { margin-top:-3em; }
+
+table {
+  --tw-border-opacity: 1;
+  border-collapse: collapse;
+  border-color: rgb(22 101 52/var(--tw-border-opacity));
+  border-width: 1px;
+  font-size: .75rem;
+  line-height: 1rem;
+  table-layout: auto;
+  width: 100%;
+}
+table td {
+  --tw-border-opacity: 1;
+  border-color: rgb(22 163 74/var(--tw-border-opacity));
+  border-width: 1px;
+  padding: .5rem;
+}
+
+.is-inset-x-0 {
+  left: 0;
+  right: 0;
+}
+.is-z-50 {
+  z-index: 50;
+}
+.is-bottom-0 {
+  bottom: 0;
+}
+.is-w-full{ width:100% }

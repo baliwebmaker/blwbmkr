@@ -1,0 +1,288 @@
+/*
+ * CSS for registered block styles.
+ * See styles/register-block-styles.php.
+ */
+
+.is-style-blwbmkr-no-bg .wp-block-navigation__responsive-container-open,
+.is-style-blwbmkr-no-bg .wp-block-navigation__responsive-container-close,
+.is-style-blwbmkr-no-bg .wp-block-navigation__responsive-container-open:hover,
+.is-style-blwbmkr-no-bg .wp-block-navigation__responsive-container-close:hover,
+.is-style-blwbmkr-no-bg .wp-block-navigation__responsive-container-open:focus,
+.is-style-blwbmkr-no-bg .wp-block-navigation__responsive-container-close:focus
+.is-style-blwbmkr-no-bg .wp-block-navigation__responsive-container-open:visited,
+.is-style-blwbmkr-no-bg .wp-block-navigation__responsive-container-close:visited {
+	box-shadow: none;
+	border-radius: 0;
+	margin-top: initial;
+	margin-bottom: initial;
+	background: none;
+	border: none;
+}
+
+/* Flat button */
+.is-style-blwbmkr-flat-button .wp-block-button__link,
+.is-style-blwbmkr-flat-button .wp-block-button__link:hover,
+.is-style-blwbmkr-flat-button .wp-block-button__link:focus,
+.is-style-blwbmkr-flat-button .wp-block-button__link:active,
+.is-style-blwbmkr-flat-button .wp-block-button__link:visited,
+.is-style-blwbmkr-flat-button .wp-block-navigation__responsive-container-open,
+.is-style-blwbmkr-flat-button .wp-block-navigation__responsive-container-close,
+.is-style-blwbmkr-flat-button .wp-block-navigation__responsive-container-open:hover,
+.is-style-blwbmkr-flat-button .wp-block-navigation__responsive-container-close:hover,
+.is-style-blwbmkr-flat-button .wp-block-navigation__responsive-container-open:focus,
+.is-style-blwbmkr-flat-button .wp-block-navigation__responsive-container-close:focus
+.is-style-blwbmkr-flat-button .wp-block-navigation__responsive-container-open:visited,
+.is-style-blwbmkr-flat-button .wp-block-navigation__responsive-container-close:visited {
+	box-shadow: none;
+	border-radius: 0;
+	margin-top: initial;
+	margin-bottom: initial;
+}
+
+/* Button with shadow */
+.is-style-blwbmkr-shadow-button .wp-block-button__link,
+.is-style-blwbmkr-shadow-button .wp-block-button__link:hover,
+.is-style-blwbmkr-shadow-button .wp-block-button__link:focus,
+.is-style-blwbmkr-shadow-button .wp-block-button__link:visited {
+	box-shadow: var(--wp--custom--button-shadow);
+}
+
+.is-style-blwbmkr-shadow-button .wp-block-button__link:active {
+	box-shadow: var(--wp--custom--button-highlight);
+}
+
+/* Transparent button */
+.is-style-blwbmkr-no-bg .wp-block-button__link,
+.is-style-blwbmkr-no-bg .wp-block-button__link:hover,
+.is-style-blwbmkr-no-bg .wp-block-button__link:focus,
+.is-style-blwbmkr-no-bg .wp-block-button__link:active,
+.is-style-blwbmkr-no-bg .wp-block-button__link:visited,
+.is-style-blwbmkr-no-bg .wc-block-mini-cart__button {
+	box-shadow: none;
+	border-radius: 0;
+	margin-top: initial;
+	margin-bottom: initial;
+	background: none;
+	border: none;
+}
+
+/* Match the button border radius for consistency. */
+.is-style-blwbmkr-image-border-radius {
+	border-radius: var(--wp--custom--button-border-radius);
+}
+
+/* Do not show animations if the user prefers reduced motion. */
+@media (prefers-reduced-motion: no-preference) {
+
+	.is-style-blwbmkr-grow-button .wp-block-button__link,
+	.is-style-blwbmkr-pulse-button .wp-block-button__link {
+		transition: all .3s ease-in-out;
+	}
+
+	.is-style-blwbmkr-grow-button .wp-block-button__link:hover,
+	.is-style-blwbmkr-grow-button .wp-block-button__link:focus {
+		padding: 0.4rem 1rem;
+		font-size: 110%;
+	}
+
+	/* This animation works best if the border radius and width is unchanged.
+	* The pulse is the same color as the button text but with lower opacity.
+	*/
+	.is-style-blwbmkr-pulse-button .wp-block-button__link:hover::before,
+	.is-style-blwbmkr-pulse-button .wp-block-button__link:focus::before {
+		content: "";
+		position: absolute;
+		border: currentcolor solid 4px;
+		border-radius: var(--wp--custom--button-border-radius);
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		animation-duration: 1.6s;
+		opacity: 0;
+		animation-name: blwbmkr-pulse-button-border;
+	}
+
+	@keyframes blwbmkr-pulse-button-border {
+
+		0% {
+			top: -8px;
+			right: -8px;
+			bottom: -8px;
+			left: -8px;
+			opacity: 0.1;
+		}
+
+		100% {
+			top: -16px;
+			right: -16px;
+			bottom: -16px;
+			left: -16px;
+			opacity: 0;
+		}
+	}
+
+	.wp-block-image.is-style-blwbmkr-zoom-image,
+	.wp-block-image.is-style-blwbmkr-zoom-image div,
+	.wp-block-post-featured-image.is-style-blwbmkr-zoom-image,
+	.wp-block-post-featured-image.is-style-blwbmkr-zoom-image div {
+		overflow: hidden;
+	}
+
+	.wp-block-image.is-style-blwbmkr-zoom-image img,
+	.wp-block-post-featured-image.is-style-blwbmkr-zoom-image img {
+		transition: all .2s ease-in-out;
+	}
+
+	.wp-block-image.is-style-blwbmkr-zoom-image img:hover,
+	.wp-block-image.is-style-blwbmkr-zoom-image img:focus,
+	.wp-block-post-featured-image.is-style-blwbmkr-zoom-image img:hover,
+	.wp-block-post-featured-image.is-style-blwbmkr-zoom-image img:focus {
+		transform: scale(1.1);
+	}
+
+	.is-style-blwbmkr-slide-up {
+		animation-duration: 1.6s;
+		animation-name: blwbmkr-slide-up;
+	}
+
+	.block-editor-block-list__block.is-style-blwbmkr-slide-up {
+		animation-name: none;
+	}
+
+	@keyframes blwbmkr-slide-up {
+
+		from {
+			transform: translateY(2em);
+		}
+
+		to {
+			transform: translateY(0);
+		}
+	}
+}
+
+/* Text shadow */
+.is-style-blwbmkr-text-shadow {
+	text-shadow: var(--wp--custom--text-shadow);
+}
+
+/* Box shadow */
+.is-style-blwbmkr-box-shadow {
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Lists*/
+.is-style-blwbmkr-list-underline li {
+	border-bottom: 1px solid currentcolor;
+}
+
+.is-style-blwbmkr-list-underline ul,
+.is-style-blwbmkr-list-underline ol {
+	border-top: 1px solid currentcolor;
+}
+
+.is-style-blwbmkr-list-underline ul li,
+.is-style-blwbmkr-list-underline ol li {
+	border: none;
+}
+
+/* Checklist */
+.is-style-blwbmkr-checklist,
+.is-style-blwbmkr-checklist li ul,
+.is-style-blwbmkr-checklist li ol {
+	list-style-type: none;
+}
+
+.is-style-blwbmkr-checklist li {
+	position: relative;
+}
+
+.is-style-blwbmkr-checklist li::before,
+.is-style-blwbmkr-checklist li ol li::before {
+	content: "\2713";
+	position: absolute;
+	top: 0;
+	left: -1.2em;
+}
+
+/* Shadow */
+.is-style-blwbmkr-list-shadow {
+	padding-left: 0;
+}
+
+.is-style-blwbmkr-list-shadow > li:not(.wp-block-navigation-item) {
+	list-style-type: none;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+	margin-bottom: 1rem;
+	padding: 0.4rem 1rem;
+	border-radius: var(--wp--custom--button-border-radius);
+}
+
+.is-style-blwbmkr-vertical-text {
+	writing-mode: vertical-lr;
+}
+
+.is-style-blwbmkr-skewed {
+	transform: rotate(-0.9deg);
+}
+
+.is-blwbmkr-overlay {
+	position: relative;
+}
+
+.blwbmkr-scroll-to-top {
+	transform: rotate(180deg);
+	filter: invert(100%);
+}
+
+/* Kept for backwards compatibility */
+.is-style-blwbmkr-no-gutter.wp-block-gallery.has-nested-images figure.wp-block-image:not(#individual-image) {
+	margin: 0;
+}
+
+/** Add a border to the header pattern for the black and white variation */
+.blwbmkr-pattern-header-image figure img {
+	border: var(--wp--custom--blwbmkr-pattern-header-image);
+}
+
+@media ( max-width: 1024px ) {
+	.blwbmkr-pattern-circular-image-overlay .is-blwbmkr-overlay {
+		margin-top: -3rem;
+	}
+}
+
+/**Add Position **/
+.is-position-relative{ 
+	position:relative; 
+}
+
+.is-position-fixed {
+  position: fixed;
+}
+
+.is-style-blwbmkr-days-counter {
+  position: absolute;
+  right: 15px;
+  bottom: -10px;
+  width: 70px;
+  height: 70px;
+  background-color: #ffb100;
+  border: 2px solid #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 100%;
+  line-height: 1;
+  padding: 9px 0 0;
+}
+
+.is-style-blwbmkr-bottom-element {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  width: 100%;
+  background-color: rgba(0,0,0,.8);
+  padding: 8px 15px 10px;
+}
