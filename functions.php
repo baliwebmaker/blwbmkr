@@ -290,7 +290,7 @@ function add_nav_top_mobile( $content, array $block ) {
     const items = document.querySelectorAll('.is-nav-top-mobile button');
     items[0].addEventListener('click', e => {
     e.target.nextElementSibling.style.display = 'block';
-    })
+    });
 
     function openWoi(e){
         if (e.style.maxHeight){

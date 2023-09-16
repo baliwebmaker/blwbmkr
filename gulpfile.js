@@ -39,9 +39,10 @@ gulp.task('minify-shared', function () {
 		.pipe(gulp.dest('assets/css/min/'));
 });
 
+//reduceIdents: false to prevent cssnano renaming animation keyframes
 gulp.task('minify-blocks', function () {
 	return gulp.src('assets/css/src/blocks/*.css')
-		.pipe(cssnano())
+		.pipe(cssnano({ reduceIdents: false}))
 		.pipe(rename({ suffix: '.min' }))
 		.pipe(gulp.dest('assets/css/min/blocks/'));
 });

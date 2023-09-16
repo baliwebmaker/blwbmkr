@@ -41,8 +41,8 @@ input[type="week"] {
 /* Accessibility: Increase icon size so that the button is easier to click */
 .wp-block-navigation__responsive-container-close svg,
 .wp-block-navigation__responsive-container-open svg {
-	width: 48px;
-	height: 48px;
+	width: 24px;
+	height: 24px;
 }
 
 .wp-block-navigation__responsive-container .hidden-by-default .is-menu-open .has-modal-open .wp-block-search {
